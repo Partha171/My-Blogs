@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Java script file  -->
+    <script src="script.js"></script>
+
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- nav part start -->
+    <header>
+        <nav>
+            <div class="navbar">
+                <!-- Logo -->
+                <a href="#"> <img src="img/logo.png" alt="Logo" class="logo"> <a>
+        
+                <!-- Menu items -->
+                <ul class="menu">
+                    <li><a href="#Top_Players">Players</a></li>
+                    <li><a href="#contact_form">From</a></li>
+                    <li><a href="#">Output</a></li>
+                    <li><a href="#contact_footer">Footer</a></li>
+                </ul>
+        
+                <!-- Mode button -->
+                <button class="mode-btn" id="mode_btn" onclick="toggleMode()">light Mode</button>
+            </div>
+        </nav>
+    </header>
+    <!-- nav part end -->
+
+    <!-- Main Part start -->
+    <main>
+        <section class="container" id="Top_Players">
+            <div class="top-players">
+                <h2 class="section-tittle">Top Player</h2>
+                <div class="players">
+                    <div class="player">
+                        <img src="img/players/player-1.png" alt="">
+                        <h3 class="player-name">Peter</h3>
+                    </div>
+                    <div class="player">
+                        <img src="img/players/player-2.png" alt="">
+                        <h3 class="player-name">Harry</h3>
+                    </div>
+                    <div class="player">
+                        <img src="img/players/player-3.png" alt="">
+                        <h3 class="player-name">Tony</h3>
+                    </div>
+                    <div class="player">
+                        <img src="img/players/player-4.png" alt="">
+                        <h3 class="player-name">Jhon</h3>
+                    </div>
+                    <div class="player">
+                        <img src="img/players/player-5.png" alt="">
+                        <h3 class="player-name">Smith</h3>
+                    </div>
+                    <div class="player">
+                        <img src="img/players/player-6.png" alt="">
+                        <h3 class="player-name">Bravo</h3>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="top-vlogs">
+                <h2 class="section-tittle">Top Vlog</h2>
+                <div class="vlogs">
+                    <article class="vlog">
+                        <div class="thumbnail">
+                            <img src="img/blogs/blog-1.png" alt="">
+                        </div>
+                        <div class="vlog-details">
+                            <h3 class="vlog-tittle">This is my first vlog about Icecream.</h3>
+                            <p class="vlog-author">By Partha Devnath</p>
+                        </div>
+                    </article>
+                    <article class="vlog">
+                        <div class="thumbnail">
+                            <img src="img/blogs/blog-2.png" alt="">
+                        </div>
+                        <div class="vlog-details">
+                            <h3 class="vlog-tittle">This is my first vlog about Icecream.</h3>
+                            <p class="vlog-author">By Partha Devnath</p>
+                        </div>
+                    </article>
+                    <article class="vlog">
+                        <div class="thumbnail">
+                            <img src="img/blogs/blog-3.png" alt="">
+                        </div>
+                        <div class="vlog-details">
+                            <h3 class="vlog-tittle">This is my first vlog about Icecream.</h3>
+                            <p class="vlog-author">By Partha Devnath</p>
+                        </div>
+                    </article>
+                    <article class="vlog">
+                        <div class="thumbnail">
+                            <img src="img/blogs/blog-4.png" alt="">
+                        </div>
+                        <div class="vlog-details">
+                            <h3 class="vlog-tittle">This is my first vlog about Icecream.</h3>
+                            <p class="vlog-author">By Partha Devnath</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main Part end -->
+
+    <!-- From Part start -->
+
+    <!-- From Part start -->
+
+    <div class="form"  id="contact_form">
+        <h1>Sumbit your feedback here</h1>
+        <form action="#" method="post" id="Feedback_Form" >
+            <p>Name</p>
+            <input type="text" name="Name" placeholder="Name" required id="name" >
+            <p>Email</p>
+            <input type="email" name="Email" placeholder="Email" required id="email" >
+            <p>Phone</p>
+            <input type="number" name="Phone" placeholder="Phone"  required id="Phone">
+            <p>Message</p>
+            <textarea name="message" placeholder="Message" rows="4" required id="subject"></textarea>
+            <br>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <div class="contact-data hidden" id="submitted_data">
+            <p>Name: <span id="submitted_name"></span></p>
+            <p>Email: <span id="submitted_email"></span></p>
+            <p>Phone:<span id="submitted_phone"></span></p>
+            <p>Message: <span id="submitted_message"></span></p>
+        </div> 
+
+    </div>
+  
+
+    <!-- From Part end -->
+    
+  
+
+    <!-- From Part end -->
+
+
+    <!-- Footer part start -->
+
+    <footer id="contact_footer">
+        <div class="footer">
+        <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Career</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+         Copyright © 2024 - All rights reserved || Designed By: Partha Devnath 
+         <button class="footer-btn"><a class="footer-icon" href="" onclick="window.scrollTo({top:0, behaviour:'smooth'})"><i class="fa-solid fa-arrow-up-from-bracket"></i></a> </button>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Footer part end -->
+
+    <script src="https://kit.fontawesome.com/fcf6c83878.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
+
